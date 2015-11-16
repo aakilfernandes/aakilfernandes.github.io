@@ -1,0 +1,92 @@
+---
+layout: post
+tagline: Hint - We Bribe the Miners
+---
+{% include JB/setup %}
+
+I've been working on an Ethereum Lottery lately and need my contracts to use a source of randomness. The obvious solution is to use the blockhash of a specific block. The problem with using the blockhash is that miners have flexibility in the blockhashes they report. They can choose to spend more time/resources to generate another blockhash that they prefer. This gives miners an ability to cheat the system.
+
+##Modelling the Problem
+
+Given a lottery game, a miner has to consider the following cost and benefit when deciding to cheat or not
+
+1. The cost of trying to cheat is the possibility another miner beats you to it and steals your block reward
+2. The benefit of trying to cheat is the possibility you successfully mine a block that gives you the jackpot (as well as the original block reward)
+
+We can model the miner's profit function with the following equation.
+
+![Miner Profit Curve](/assets/images/randomness/eqs/explainer.gif)
+
+1. `blockreward` is the amount of ether a miner gets for correctly mining ANY block. Currently the network has a `blockreward` of 5
+2. `hashshare` is the percentage of the global hashrate that belongs to the miner. The maximum hashshare we care about is 50% - beyond which double spend attacks make our current problem irrelevant.
+3. `buyin` is the amount that the miner contributes to the lottery
+4. `jackpot` is the total amount contributed to the lottery
+
+To simplify things, lets assume that a miner has a `hashshare` of ~50% and the `blockreward` is 5 ether.
+
+![Miner Profit Curve](/assets/images/randomness/eqs/basic.gif)
+
+And here's the miner's profit curve graphed out with the `buyin` on the x-axis and the `jackpot` on the y-axis.
+
+![Miner Profit Curve](/assets/images/randomness/miner-profit-curve.png)
+
+Of course, our buyin cannot exceed the jackpot. Lets add the bound where `jackpot > buyin`.
+
+![Miner Profit Curve with Bound](/assets/images/randomness/miner-profit-curve-with-bound.png)
+
+We are only concerned with the section where the profit curve (red) that overlaps the bound (blue).
+
+We can see from the graph above, that for jackpots above 5 ether, miners may have an incentive to try and cheat given a certain buyin. This is not good. Ideally there would be no intersection between the bound and the profit curve.
+
+## Exploiting the Inflexibility of Mining Pools - and Bribing Them
+
+The most powerful and concerning miners are the pools. At the time of this writing, EthPool has ~40% hashshare. If we could succesffully ignore blockhashes submitted by mining pools, we might be able to make our use of the blockhash more robust.
+
+Luckly, mining pools have a weakness. When pools send their work packages to the member miners, they have to include the coinbase. This is a technical limitation of pooled mining that the mining operator cannot choose to shirk on. If a mining pool changes their coinbase - even for a single block - everyone will know.
+
+We can exploit this to maintain a blacklist of mining pool coinbases. We can then ignore any blocks reported by a mining pool.
+
+It is true that a mining pool can attempt to cheat by switching up their coinbase at the last second, but everyone will know that they attempted to cheat. We can use this knowledge to bribe the pools to not switch their coinbases. If we give the mining pools a long term interest in keeping the lottery running, they won't cheat for a short term gain.
+
+How much of a bribe is necessary depends on how confident the pool owners are in the long term profitability of the lottery - a variable that is impossible to model. For the sake of argument, we'll assume that a pool bribe of 5% is sufficient to prevent pools from switching their coinbases.
+
+### Setting the Mining Pool Blacklist
+
+While it is possible to have an individual periodically update the lottery with a blacklist, that requires trust in someone to update the blacklist. Another option is to have the contract check the last X blocks of the chain and infer the pools by the percentage of blocks they mined.
+
+## Revisiting our Profit Curve, Assuming no Mining Pools
+
+We assume we've sufficiently bribed the pools to not switch their coinbases and that no individual miner will achieve more than 10% hashshare. The profit curve of a miner with 10% hashshare can be modelled by:
+
+![Miner Profit Curve Pool Bribe](/assets/images/randomness/eqs/pool-bribe.gif)
+
+Note that if he wins, he only receives 95% of the jackpot since 5% is now going to pool owners.
+
+Graphed out, the individual miner's profit curve looks like:
+
+![Miner Profit Curve Pool Bribe](/assets/images/randomness/miner-profit-with-pool-bribed.png)
+
+We've successfully increased our maximum jackpot to around 45 ether, while 95% of profits still go to the players of the lottery.
+
+We've incentivized pool owners not to cheat, but how can we sufficiently incentivize individual miners to not try and cheat? Like the pool owners, we can bribe them with a percentage of the jackpot. Unlike pool owners, there is no way to incentivize them in the long term since individual miners can secretely alter their coinbases whenever they like.
+
+In order to properly bribe individual miners, we need to give them a a portion of the pot equivalent to their expected value of cheating.
+
+Since we've assumed an individual miner has no more than 10% of the global hashrate, we can properly incentivize them with bonus of 10% of the remaining jackpot (10% of 95% of the original jackpot). Here's what that looks like when modeled.
+
+![Miner Profit Curve with Pool and Individual Bribe](/assets/images/randomness/eqs/pool-bribe-and-individual-bribe.gif)
+
+![Miner Profit Curve with Pool and Individual Bribe](/assets/images/randomness/miner-profit-with-pool-and-individual-bribed.png)
+
+And voila! No overlap. We have a way to generate random numbers in Ethereum contracts such that the miners have no incentive to cheat. It cost us ~15% of the jackpot with 5% going to the pool owners and ~10% going to the individual miner.
+
+## Putting it all together
+
+1. If the jackpot is less than 5 ether, no bribe is necessary
+2. If the jackpot is between 5 and ~45 ether, we give a 5% bribe to the pool owners and ignore blocks mined by the pool owners
+3. If the jackpot is greather than ~45 ether, we also give a 10% bribe to the individual miner of the block
+
+PS thanks to the following tools for the graphs/latex
+
+* [https://www.desmos.com/calculator](https://www.desmos.com/calculator)
+* [https://latex.codecogs.com/](https://latex.codecogs.com/)

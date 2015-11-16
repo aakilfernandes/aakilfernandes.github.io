@@ -1,0 +1,25 @@
+{
+  "name": "angular-sidenav",
+  "homepage": "https://github.com/aakilfernandes/angular-sidenav",
+  "authors": [
+    "Aakil Fernandes <aakilfernandes@gmail.com>"
+  ],
+  "main": "sidenav.js",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "_release": "c4081b3302",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "c4081b330223204ad3d78fde5b3efacb2dd61fde"
+  },
+  "_source": "git://github.com/aakilfernandes/angular-sidenav.git",
+  "_target": "*",
+  "_originalSource": "angular-sidenav"
+}

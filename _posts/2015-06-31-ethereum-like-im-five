@@ -1,0 +1,46 @@
+---
+layout: post
+---
+{% include JB/setup %}
+
+This post is a draft. If you're here, leave!
+
+Confused about Ethereum? You're not alone. This post tries to explain ethereum in simple English.
+
+You have a lot of programs installed on your computer at this very moment. Each of those programs takes up a resources such as computing power and storage. Now here's a question, would you open up and allow anyone to run a program on your computer?
+
+Surprisingly, millions of people around the world have agreed to just that when they install Bitcoin. Bitcoin contains a programming language called "Script" that allows anyone in the world to update the contents of their own personal Bitcoin ledger. However, Script's powers to change their ledger are not unchecked. Bitcoin's software ensures that all programs have the correct permissions before they are run, and that the creator of the program isn't spamming the network.
+
+When Satoshi Nakamoto created Script, he intentially handicapped it. He didn't want to give this programming language the power to kill Bitcoin so he took away some very powerful aspects of most programming languages:
+
+1. Arbitrary data storage
+2. "Turing Completeness"
+
+Data storage is relatively easy to understand, and its easy to see why Satoshi would want to limit Script's ability to store data. Every one has had experience with an app that takes too much liberty with their right to store data. Imagine what would happen if everyone in the world had that ability?
+
+Now, Turing Completeness... thats a little more difficult to understand.
+
+### What is Turing Completeness?
+
+Turing Completeness is a fancy way of saying "this program can loop on itself". Every major programming language from Python to Ruby to Javascript is Turing Complete. Here's an example of a turing complete program.
+
+    addUntill5(a){
+    	b = a + 1;
+    	if(b<5)
+    	    addUntill5(b)
+    	else
+    	    return;
+    }
+
+That doesn't seem so complicated does it? So why did Satoshi remove Turing-completeness from Bitcoin?
+
+Lets imagine there's an evil programmer out there. That programmer could create a loop that never ends. Such a program would brick the resources of every Bitcoin runner in the world.
+
+## Enter Ethereum
+
+Ethereum is the audacious daughter of Bitcoin. It allows anyone in the world to run programs of arbitrary length, and store abitrary amounts of data, on your machine. On its face, it sounds like a recipe for disaster.
+
+How does Ethereum make sure your computer doesn't turn into slush? It makes sure each program pays a fee proportional to the storage and data in consumes.
+
+Want to add 5+5? That'll require 1 ether. Want to add 5+5 and store the result? Well that'll require 2 Ether.
+
