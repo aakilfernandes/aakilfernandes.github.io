@@ -45,9 +45,9 @@ A few years ago, currency entrepreneurs would need a lot of skill to get their c
 
 Thanks to a blockchain technology called Ethereum, the barriers to creating your own currency just got a lot smaller. Ethereum has their own token which powers the network, but that token can (and will) swing wildly in price. Luckily, Ethereum allows you to create your own “sub currency” on top of Ethereum, who’s value is no way linked to the value of Ethereum. Ethereum provides the clients and networks, you just provide the monetary policy.
 
-## The State of SubCurrencies
+## The State of Subcurrencies
 
-Here are some SubCurrencies already in the works
+Here are some subcurrencies already in the works
 
 1. Digix.io is creating gold backed tokens
 2. Tether is creating tokens tied to the USD (TODO: Verify this)
