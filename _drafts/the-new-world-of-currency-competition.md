@@ -50,7 +50,7 @@ Thanks to a blockchain technology called Ethereum, the barriers to creating your
 Here are some SubCurrencies already in the works
 
 1. Digix.io is creating gold backed tokens
-2. Tether is creating tokens tied to the USD
+2. Tether is creating tokens tied to the USD (TODO: Verify this)
 3. MakerDao is creating tokens tied to a basket of other tokens
 
 More importantly, these “subcurrencies” are all interoperable assuming they respect the already described public subcurrency api. A store owner can choose which currencies to accept simply by checking a box.
