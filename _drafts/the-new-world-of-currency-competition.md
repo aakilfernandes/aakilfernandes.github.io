@@ -20,9 +20,11 @@ In fact, since we already have one central bank with a public api, couldn’t we
 
     curl http://api.BankOfCanada.us/Aakil/balance
 
-But why stop at nation states? Once we’ve agreed to a standardized public api, anyone with a pet economic theory and little bit of programming knowledge could set up their own central bank, issue currency, set inflation targets, print money, destroy money. Once you accept that a central bank is little more than an access-controlled database, there’s no reason you or me couldn’t start one.
+But why stop at nation states? Once we’ve agreed to a standardized public api, anyone with a pet economic theory and little bit of programming knowledge could set up their own central bank, issue currency, set inflation targets, print money, destroy money. Once you accept that a central bank is little more than an access-controlled database, there’s no reason anyone couldn't start one.
 
-    curl http://api.BankOfAakil.us/Aakil/balance
+    curl http://api.SchruteFarms.pa/Aakil/balance
+
+![Currency Competition in SafeMarket](/assets/images/currency/screenshot.png)
 
 ## Enter the Blockchain
 
@@ -57,6 +59,6 @@ More importantly, these “subcurrencies” are all interoperable assuming they 
 
 Here’s a screenshot of an unreleased version of SafeMarket, the Ethereum powered marketplace I’ve been working on. Merchants will be able to accept any token with a few clicks. Tokens not included out of the box can be added by providing their contract api.
 
-![Currency Competition in SafeMarket](/assets/images/currency-competition.png)
+![Currency Competition in SafeMarket](/assets/images/currency/screenshot.png)
 
 Personally, I’d love to see universities and other non-profits enter the currency competition. Today we have dollars backed by faith in the US Government. Tomorrow, we might see cryptocurrency backed by faith in the University of Chicago.
