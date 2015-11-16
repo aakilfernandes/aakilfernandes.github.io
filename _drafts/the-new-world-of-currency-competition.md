@@ -63,6 +63,8 @@ Here are some SubCurrencies already in the works
 
 More importantly, these “subcurrencies” are all interoperable assuming they respect the already described public subcurrency api. A store owner can choose which currencies to accept simply by checking a box.
 
-Here’s a screenshot of an unreleased version of SafeMarket, the Ethereum powered marketplace I’ve been working on. Merchants will be able to accept tokens in any subcurrency that follows the spec.
+Here’s a screenshot of an unreleased version of SafeMarket, the Ethereum powered marketplace I’ve been working on. Merchants will be able to accept any token with a few clicks. Tokens not included out of the box can be added by providing their contract api.
+
+![Currency Competition in SafeMarket](/assets/images/currency-competition.png)
 
 Personally, I’d love to see universities enter the currency competition. Today we have dollars backed by faith in the US Government. Tomorrow, we might see cryptocurrency backed by faith in the University of Chicago.
