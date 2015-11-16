@@ -24,7 +24,7 @@ But why stop at nation states? Once we’ve agreed to a standardized public api,
 
     curl http://api.SchruteFarms.pa/Aakil/balance
 
-![Currency Competition in SafeMarket](/assets/images/currency/screenshot.png)
+![Currency Competition in SafeMarket](/assets/images/currency/schrutebucks.jpg)
 
 ## Enter the Blockchain
 
