@@ -6,15 +6,11 @@ layout: post
 
 Lets assume a counterfactual. Imagine that instead of the year 1813, the Central Bank of the United States of America was founded in 2020. Rather than issuing paper cash or silver coins, this internet-age central bank might simply set up a database with a public api. If you want to check the balance of your money, you could issue a simple http request to the central bank
 
-{% highlight bash %}
-curl http://api.federalreserve.us/Aakil/balance
-{% endhighlight %}
+    curl http://api.federalreserve.us/Aakil/balance
 
 If I want to pay my landlord $2000 at the end of the month, I could make another request
 
-{% highlight bash %}
-curl http://api.FederalReserve.us/send?from=Aakil&amount=2000&to=Landlord
-{% endhighlight %}
+    curl http://api.FederalReserve.us/send?from=Aakil&amount=2000&to=Landlord
 
 The benefit of such a system to citizens would be huge. It would allow instant global transfers of wealth without financial intermediaries. No paypal or venmo necessary.
 
@@ -22,15 +18,11 @@ Such a system could work regardless of the monetary policy the central bank choo
 
 In fact, since we already have one central bank with a public api, couldn’t we have more than one central bank with the same public api? Lets say I’m a store owner that wants to accept not only US Dollars, but Canadian Dollars. It would be quite easy for the Bank of Canada to create a public api that matches our counterfactual American Central Bank.
 
-{% highlight bash %}
-curl http://api.BankOfCanada.us/Aakil/balance
-{% endhighlight %}
+    curl http://api.BankOfCanada.us/Aakil/balance
 
 But why stop at nation states? Once we’ve agreed to a standardized public api, anyone with a pet economic theory and little bit of programming knowledge could set up their own central bank, issue currency, set inflation targets, print money, destroy money. Once you accept that a central bank is little more than an access-controlled database, there’s no reason you or me couldn’t start one.
 
-{% highlight bash %}
-curl http://api.BankOfAakil.us/Aakil/balance
-{% endhighlight %}
+    curl http://api.BankOfAakil.us/Aakil/balance
 
 ## Enter the Blockchain
 
