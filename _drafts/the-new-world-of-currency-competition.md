@@ -6,7 +6,7 @@ layout: post
 
 Lets assume a counterfactual. Imagine that instead of the year 1813, the Central Bank of the United States of America was founded in 2020. Rather than issuing paper cash or silver coins, this internet-age central bank might simply set up a database with a public api. If you want to check the balance of your money, you could issue a simple http request to the central bank
 
-    curl http://api.federalreserve.us/Aakil/balance
+    curl http://api.FederalReserve.us/Aakil/balance
 
 If I want to pay my landlord $2000 at the end of the month, I could make another request
 
