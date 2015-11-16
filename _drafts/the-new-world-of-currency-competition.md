@@ -39,7 +39,7 @@ If the answer is no, there’s good news. Using the technology behind Bitcoin (u
 5. A central bank which uses decentralized prediction markets to set their interest rates
 6. A central bank backed by a vault of gold bars
 7. A central bank backed by a vault of US Dollars
-7. A central bank backed by one-way-pegged Bitcoin, dogecoin, litecoin, etc
+7. A central bank backed by one-way-pegged Bitcoin, Dogecoin, LiteCoin, etc
 
 A few years ago, currency entrepreneurs would need a lot of skill to get their currency up and running. They would need to create the clients and mining software, then they would have to find a way to incentivize miners to mine.
 
