@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Perun: A Useful Unit for Dimensionless Programming
+title: Perun - A Useful Unit for Dimensionless Programming
 ---
 {% include JB/setup %}
 
