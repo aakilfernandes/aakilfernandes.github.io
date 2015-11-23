@@ -41,21 +41,21 @@ If the answer is no, there’s good news. Using the technology behind Bitcoin (u
 5. A central bank which uses decentralized prediction markets to set their interest rates
 6. A central bank backed by a vault of gold bars
 7. A central bank backed by a vault of US Dollars
-7. A central bank backed by one-way-pegged Bitcoin, Dogecoin, LiteCoin, etc
+8. A central bank backed by one-way-pegged Bitcoin, Dogecoin, LiteCoin, etc
 
 A few years ago, currency entrepreneurs would need a lot of skill to get their currency up and running. They would need to create the clients and mining software, then they would have to find a way to incentivize miners to mine.
 
-Thanks to a blockchain technology called Ethereum, the barriers to creating your own currency just got a lot smaller. Ethereum has their own token which powers the network, but that token can (and will) swing wildly in price. Luckily, Ethereum allows you to create your own “sub currency” on top of Ethereum, who’s value is no way linked to the value of Ethereum. Ethereum provides the clients and networks, you just provide the monetary policy.
+Thanks to a blockchain technology called Ethereum, the barriers to creating your own currency just got a lot smaller. Ethereum has their own token (Ether) which powers the network, but that token can (and will) swing wildly in price. Luckily, Ethereum allows you to create your own token on top of Ethereum, who’s value is no way linked to the value of Ether. Ethereum provides the clients and networks, you just provide the monetary policy.
 
-## The State of Subcurrencies
+## The State of Tokens
 
-Here are some subcurrencies already in the works
+Here are some tokens already in the works
 
 1. Digix.io is creating gold backed tokens
 2. Tether is creating tokens tied to the USD (TODO: Verify this)
 3. MakerDao is creating tokens tied to a basket of other tokens
 
-More importantly, these “subcurrencies” are all interoperable assuming they respect the already described public subcurrency api. A store owner can choose which currencies to accept simply by checking a box.
+More importantly, these tokens are all interoperable assuming they respect an already described public subcurrency api. A store owner can choose which currencies to accept simply by checking a box.
 
 Here’s a screenshot of an unreleased version of SafeMarket, the Ethereum powered marketplace I’ve been working on. Merchants will be able to accept any token with a few clicks. Tokens not included out of the box can be added by providing their contract api.
 
