@@ -36,7 +36,7 @@ You could have
 
 SI prefixes are incredibly useful, however they are difficult to apply to percentages. "1 centipercent" means 1 part per 10,000, however it requres some mental gymnastics and is quite unintuitive.
 
-## Why "percent" is good
+## Why "perun" is good
 
 While "percent" is short for "parts per cent (one-hundred)", "perun" is short for "parts per un (one)". It allows for unambiguous code and, because it also follows SI prefixes, allows for easy representation of decimals as integers.
 
