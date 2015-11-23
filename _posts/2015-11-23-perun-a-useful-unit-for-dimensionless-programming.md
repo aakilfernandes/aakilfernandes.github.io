@@ -22,9 +22,11 @@ Ambiguity is writing code that can be interpreted by a human reader multiple way
 
 Floating point representations, which is a common way of representing numbers in many languages, is fundamentally incapabale of precisely representing many decimals. Trying to perform mathematical operations on these decimals results in wierd and unexpected behavior.
 
+![Floating Point Error](/assets/images/floating-point-error.png)
+
 Programmers typically get around this limitation by storing decimals as strings and abstracting mathematical operations into other libraries. Such libraries result in bloated code and extra dependencies. In most cases they are a reasonable though imperfect solution. In systems like Ethereum where computation power is very scarce, such hacks are unacceptably expensive.
 
-### SI Prefixes
+#### SI Prefixes
 
 Its easy to represent integers as decimals if units follow SI prefixes. For example, instead of having
 
