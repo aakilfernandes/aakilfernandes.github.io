@@ -5,7 +5,7 @@ layout: post
 
 You may not of known it, but you've already been doing dimensionless programming. Everytime your code has a percentage, you're using a "dimensionless" unit. While the usage of "percent" is commonplace, it ends up causing problems that "perun" can fix.
 
-## Why "percent" sucks
+## Why "percent" is bad
 
 Lets say you come across the following code.
 
@@ -33,9 +33,9 @@ You could have
 
     var lengthCentimeters = 1
 
-SI prefixes are incredibly useful, however they are difficult to apply to percentages. "1 centipercent" means 1 part per 10,000, however it requres some mental gymnastics.
+SI prefixes are incredibly useful, however they are difficult to apply to percentages. "1 centipercent" means 1 part per 10,000, however it requres some mental gymnastics and is quite unintuitive.
 
-## Perun
+## Why "percent" is good
 
 While "percent" is short for "parts per cent (one-hundred)", "perun" is short for "parts per un (one)". It allows for unambiguous code and, because it also follows SI prefixes, allows for easy representation of decimals as integers.
 
