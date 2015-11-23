@@ -2,6 +2,7 @@
 layout: post
 title: Perun: A Useful Unit for Dimensionless Programming
 ---
+{% include JB/setup %}
 
 You may not of known it, but you've already been doing dimensionless programming. Everytime your code has a percentage, you're using a "dimensionless" unit. While the usage of "percent" is commonplace, it ends up causing problems that "perun" can fix.
 
