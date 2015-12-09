@@ -8,7 +8,7 @@ The concept of price stable cryptocurrencies has been on my mind a lot because I
 While the mechanisms of this strategy can be complicated, there are a few main takeaways:
 
 1. It requires an honest price feed that will report changes in exchange rates
-2. It allows the creation of token pegged to any price index or asset, **without holding the underlying asset**
+2. It allows the creation of token pegged to any price index or asset, **without holding the asset being pegged to**
 	1. You could peg a token to the USD without any reserves of USD
 	2. You could peg a token to the Big Mac Index without holding any reserves of Big Macs
 
