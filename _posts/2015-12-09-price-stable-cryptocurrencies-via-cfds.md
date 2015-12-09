@@ -47,7 +47,7 @@ What if the value of BTC drops so much that even the collateral cannot cover it?
 
 While we have $300<sup>BTC</sup> of collateral for $102<sup>BTC</sup>, severe drops in the price of BTC could make it so that Larry does not receive his investment. This is protected against automatically by the escrow service, who prematurely ends the contract and returns Larry’s $102<sup>BTC</sup> if there is a possibility the CFD might default. In such a scenario, Harry might not be returned any of her original collateral.
 
-## Fungability
+## Fungibility
 
 Now Larry has a contract provably worth $102<sup>BTC</sup>. Rather then forcing Larry to claim the contract, we could send a ticket to Larry that allows him (or anyone else who presents that ticket) to claim the contract. In turn, Larry could sell that ticket to whoever he likes.
 
