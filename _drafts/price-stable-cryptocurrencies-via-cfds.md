@@ -20,7 +20,7 @@ It turns out, Harry’s prediction was right and her decision to convert USD to 
 
 Harry looks at the market, and she concludes that Bitcoin’s current bull run isn’t over yet. She wants to buy more BTC, but she doesn’t have any more USD in her account. She could start a bank transfer, however that will take 3 days and she thinks the bull run might be over by then.
 
-Instead of buying more USD, Harry can create a **contract for difference**, or **CFD**, with another investor,  who we will name Larry. Larry's friends call him Low-Risk-Low-Reward Larry because hey likes stability.
+Instead of buying more USD, Harry can create a **contract for difference**, or **CFD**, with another investor,  who we will name Larry. Larry's friends call him Low-Risk-Low-Reward Larry because he likes stability.
 
 Unlike Harry, Larry isn’t really interested in speculating on the day-to-day of Bitcoin. He’d much rather spend his time elsewhere. However, Larry realizes that he can structure a contract with Harry that pays him a 2% interest rate with very little risk.
 
