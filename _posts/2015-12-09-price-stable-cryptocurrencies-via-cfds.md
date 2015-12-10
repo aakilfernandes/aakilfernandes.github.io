@@ -45,7 +45,7 @@ While the value of the CFD to Harry is volatile, the value of the CFD to Nelly i
 
 What if the value of ETH drops so much that even the collateral cannot cover it?
 
-While we have $300<sup>ETH</sup> of collateral, a very severe drop in the price of ETH could make it so that Nelly does not receive his original $100<sup>ETH</sup>. This is protected against automatically by the escrow service, who prematurely ends the contract and returns Nelly’s $100<sup>ETH</sup> if there is a possibility the CFD might default. In such a scenario, Harry might not be returned any of his original collateral.
+While we have $300<sup>ETH</sup> of collateral, a very severe drop in the price of ETH could make it so that Nelly does not receive his original $100<sup>ETH</sup>. This is protected against automatically by the escrow service, who prematurely ends the contract and  automatically rolls Nelly's $100<sup>ETH</sup> into a new CFD if there is a possibility of a default. In such a scenario, Harry might not be returned any of his original collateral.
 
 ## Creating the Currency
 
