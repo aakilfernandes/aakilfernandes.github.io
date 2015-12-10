@@ -12,13 +12,13 @@ While the mechanisms of this strategy can be complicated, there are a few main t
 	1. You could peg a token to the USD without any reserves of USD
 	2. You could peg a token to the Big Mac Index without holding any reserves of Big Macs
 
-Lets assume there’s a cryptocurrency enthusiast named Harry. Harry's friends call him High-Risk-High-Reward Harry because he has a high tollerance for risk. Harry really likes reading the latest news in the crypto space and decides he can put her knowledge to good use by becoming a speculator. He goes to a ETH/USD exchange where he starts a bank transfer of $100<sup>USD</sup>. Once the bank transfer is complete, her exchange account holds $100<sup>USD</sup> and $0<sup>ETH</sup>.
+Lets assume there’s a cryptocurrency enthusiast named Harry. Harry's friends call him High-Risk-High-Reward Harry because he has a high tollerance for risk. Harry really likes reading the latest news in the crypto space and decides he can put his knowledge to good use by becoming a speculator. He goes to a ETH/USD exchange where he starts a bank transfer of $100<sup>USD</sup>. Once the bank transfer is complete, his exchange account holds $100<sup>USD</sup> and $0<sup>ETH</sup>.
 
-On one particular day, Harry reads about a new development in the Ethereum world that he thinks could radically increase the value of ether. He goes to her exchange and immediately converts the entirety of her portfolio from USD to ETH. Harry now holds $0<sup>USD</sup> and $100<sup>ETH</sup>
+On one particular day, Harry reads about a new development in the Ethereum world that he thinks could radically increase the value of ether. He goes to his exchange and immediately converts the entirety of his portfolio from USD to ETH. Harry now holds $0<sup>USD</sup> and $100<sup>ETH</sup>
 
-It turns out, Harry’s prediction was right and her decision to convert USD to ETH was very wise. The value of ether doubles. Harry’s exchange account now holds $0<sup>USD</sup> and $200<sup>ETH</sup>
+It turns out, Harry’s prediction was right and his decision to convert USD to ETH was very wise. The value of ether doubles. Harry’s exchange account now holds $0<sup>USD</sup> and $200<sup>ETH</sup>
 
-Harry looks at the market, and he concludes that ether’s current bull run isn’t over yet. He wants to buy more ETH, but he doesn’t have any more USD in her account. He could start a bank transfer, however that will take 3 days and he thinks the bull run might be over by then.
+Harry looks at the market, and he concludes that ether’s current bull run isn’t over yet. He wants to buy more ETH, but he doesn’t have any more USD in his account. He could start a bank transfer, however that will take 3 days and he thinks the bull run might be over by then.
 
 Instead of buying more USD, Harry can create a **contract for difference**, or **CFD**, with another investor,  who we will name Larry. Larry's friends call him Low-Risk-Low-Reward Larry because he likes stability.
 
@@ -26,7 +26,7 @@ Unlike Harry, Larry isn’t really interested in speculating on the day-to-day o
 
 Harry and Larry agree to a contract that goes like this:
 
-1. Harry will put up her $200<sup>ETH</sup> as collateral into an escrow
+1. Harry will put up his $200<sup>ETH</sup> as collateral into an escrow
 2. Larry will put up his $100<sup>ETH</sup> of collateral into the same escrow
 3. The contract will end in 24 hours at which point
 	1. The escrow will send $102<sup>ETH</sup> of collateral will be sent to Larry
@@ -45,7 +45,7 @@ While the value of the contract to Harry is volatile, the value of the contract 
 
 What if the value of ETH drops so much that even the collateral cannot cover it?
 
-While we have $300<sup>ETH</sup> of collateral for $102<sup>ETH</sup>, severe drops in the price of ETH could make it so that Larry does not receive his investment. This is protected against automatically by the escrow service, who prematurely ends the contract and returns Larry’s $102<sup>ETH</sup> if there is a possibility the CFD might default. In such a scenario, Harry might not be returned any of her original collateral.
+While we have $300<sup>ETH</sup> of collateral for $102<sup>ETH</sup>, severe drops in the price of ETH could make it so that Larry does not receive his investment. This is protected against automatically by the escrow service, who prematurely ends the contract and returns Larry’s $102<sup>ETH</sup> if there is a possibility the CFD might default. In such a scenario, Harry might not be returned any of his original collateral.
 
 ## Fungibility
 
