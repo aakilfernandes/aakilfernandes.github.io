@@ -1,5 +1,5 @@
 ---
-title: DRAFT - Price-Stable Cryptocurrencies via Contract For Differences
+title: Price-Stable Cryptocurrencies via Contract For Differences
 layout: post
 ---
 
@@ -20,43 +20,41 @@ It turns out, Harry’s prediction was right and his decision to convert USD to 
 
 Harry looks at the market, and he concludes that ether’s current bull run isn’t over yet. He wants to buy more ETH, but he doesn’t have any more USD in his account. He could start a bank transfer, however that will take 3 days and he thinks the bull run might be over by then.
 
-Instead of buying more USD, Harry can create a **contract for difference**, or **CFD**, with another investor,  who we will name Larry. Larry's friends call him Low-Risk-Low-Reward Larry because he likes stability.
+Instead of buying more USD, Harry can create a **contract for difference**, or **CFD**, with another investor,  who we will name Nelly. Nelly's friends call him No-Risk-No-Reward Nelly because he likes stability.
 
-Unlike Harry, Larry isn’t really interested in speculating on the day-to-day of ether. He’d much rather spend his time elsewhere. However, Larry realizes that he can structure a contract with Harry that pays him a 2% interest rate with very little risk.
+Unlike Harry, Nelly isn’t really interested in speculating on the day-to-day of ether. He just wants to make sure the value of the money in his account stays stable.
 
-Harry and Larry agree to a contract that goes like this:
+Harry and Nelly agree to a contract that goes like this:
 
 1. Harry will put up his $200<sup>ETH</sup> as collateral into an escrow
-2. Larry will put up his $100<sup>ETH</sup> of collateral into the same escrow
+2. Nelly will put up his $100<sup>ETH</sup> of collateral into the same escrow
 3. The contract will end in 24 hours at which point
-	1. The escrow will send $102<sup>ETH</sup> of collateral will be sent to Larry
+	1. The escrow will send $100<sup>ETH</sup> of collateral will be sent to Nelly
 	2. The escrow will send the remainder of the collateral to Harry
 
 *Note that this contract exists entirely on the blockchain. The escrow is automated and there is no risk of the escrow stealing funds.*
 
 Lets take a look at the value of the contract under two scenarios. In the first scenario, the price of ETH in USD doubles. In the second scenario, the price of ETH in USD halves.
 
-1. If the price of ETH doubles, the value of the collateral in the contract doubles from $300<sup>ETH</sup> to $600<sup>ETH</sup>. Since Larry will be returned $102<sup>ETH</sup>, Harry will be returned $498<sup>ETH</sup>.
-2. If the price of ETH halves, the value of the collateral in the contract halves from $300<sup>ETH</sup> to $150<sup>ETH</sup>. Since Larry's will be returned $102<sup>ETH</sup>, Harry will be returned a mere $48<sup>ETH</sup>
+1. If the price of ETH doubles, the value of the collateral in the contract doubles from $300<sup>ETH</sup> to $600<sup>ETH</sup>. Since Nelly will be returned $100<sup>ETH</sup>, Harry will be returned $500<sup>ETH</sup>.
+2. If the price of ETH halves, the value of the collateral in the contract halves from $300<sup>ETH</sup> to $150<sup>ETH</sup>. Since Nelly's will be returned $100<sup>ETH</sup>, Harry will be returned a mere $50<sup>ETH</sup>
 
-While the value of the contract to Harry is volatile, the value of the contract to Larry is completely known. He will always receive $102<sup>ETH</sup>.
+While the value of the contract to Harry is volatile, the value of the contract to Nelly is completely known. He will always receive $100<sup>ETH</sup>.
 
 ## But wait!
 
 What if the value of ETH drops so much that even the collateral cannot cover it?
 
-While we have $300<sup>ETH</sup> of collateral for $102<sup>ETH</sup>, severe drops in the price of ETH could make it so that Larry does not receive his investment. This is protected against automatically by the escrow service, who prematurely ends the contract and returns Larry’s $102<sup>ETH</sup> if there is a possibility the CFD might default. In such a scenario, Harry might not be returned any of his original collateral.
+While we have $300<sup>ETH</sup> of collateral for $100<sup>ETH</sup>, severe drops in the price of ETH could make it so that Nelly does not receive his investment. This is protected against automatically by the escrow service, who prematurely ends the contract and returns Nelly’s $100<sup>ETH</sup> if there is a possibility the CFD might default. In such a scenario, Harry might not be returned any of his original collateral.
 
-## Fungibility
+## Creating the Currency
 
-Now Larry has a contract provably worth $102<sup>ETH</sup>. Rather then forcing Larry to claim the contract, we could send a ticket to Larry that allows him (or anyone else who presents that ticket) to claim the contract. In turn, Larry could sell that ticket to whoever he likes.
+Now Nelly has a contract provably worth $100<sup>ETH</sup>. Rather then forcing Nelly to claim the contract, we could send a ticket to Nelly that allows him (or anyone else who presents that ticket) to claim the contract. In turn, Nelly could sell that ticket to whoever he likes. These
 
-Lets imagine that the terms of the CFD that Harry and Larry agreed to were standardized across thousands of contracts. That means the collateral ratio and the interest rate for each of these CFDs would be the same. The tickets to claim the CFDs could be traded around with stable value, each holder fully aware of the collateral backing it.
+As these tickets grow in quantity, they eventually become a currency. Every ticket holder knows their ticket corresponds to a CFD worth $100<sup>ETH</sup>.
 
-As these tickets grow in quantity, they eventually become a currency. Every ticket holder knows their ticket corresponds to a CFD worth $102<sup>ETH</sup>.
+## Liquidity
 
-### Liquidity
+All of this assumes that the market for CFDs is liquid enough to support the tickets. When one CFD ends, the collateral returned from the ticket has to be rolled over into a new CFD. If ether has been stable or declining, the High-Risk-High-Reward Harrys of the world might decide to wait it out. If enough Harrys quit the market, the tickets no longer have any backing.
 
-All of this assumes that the market for CFDs is liquid enough to support the tickets. When One CFD expires, the collateral returned from the ticket has to be rolled over into a new CFD. It is unclear to me what should happen if there are not enough CFDs at a given period of time to satisfy the demand.
-
-It should also be noted that (given the collateral requirements above) it requires $300<sup>ETH</sup> to create $102<sup>CFD Ticket</sup>.
+One possible solution is to take a piece of each CFD and put it into an insurance fund. This insurance fund can automatically be drawn down during liquidity shocks.
