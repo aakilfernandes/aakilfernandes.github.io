@@ -57,4 +57,4 @@ As these tickets grow in quantity, they eventually become a currency. Every tick
 
 All of this assumes that the market for CFDs is liquid enough to support the tickets. When one CFD ends, the collateral returned from the ticket has to be rolled over into a new CFD. If ether has been stable or declining for a period of long period of time, the High-Risk-High-Reward Harrys of the world might decide to wait it out. If enough Harrys quit the market, the tickets no longer have any backing.
 
-There's some interesting ways provide insurance against this sort of scenario, but thats beyond the scope of this post.
+There's some interesting ways to provide insurance against this sort of scenario, but thats beyond the scope of this post.
