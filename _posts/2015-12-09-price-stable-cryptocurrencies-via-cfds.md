@@ -12,13 +12,13 @@ While the mechanisms of this strategy can be complicated, there are a few main t
 	1. You could peg a token to the USD without any reserves of USD
 	2. You could peg a token to the Big Mac Index without holding any reserves of Big Macs
 
-Lets assume there’s a cryptocurrency enthusiast named Harry. Harry's friends call him High-Risk-High-Reward Harry because he has a high tollerance for risk. Harry really likes reading the latest news in the crypto space and decides she can put her knowledge to good use by becoming a speculator. She goes to a BTC/USD exchange where she starts a bank transfer of $100<sup>USD</sup>. Once the bank transfer is complete, her exchange account holds $100<sup>USD</sup> and $0<sup>BTC</sup>.
+Lets assume there’s a cryptocurrency enthusiast named Harry. Harry's friends call him High-Risk-High-Reward Harry because he has a high tollerance for risk. Harry really likes reading the latest news in the crypto space and decides he can put her knowledge to good use by becoming a speculator. He goes to a BTC/USD exchange where he starts a bank transfer of $100<sup>USD</sup>. Once the bank transfer is complete, her exchange account holds $100<sup>USD</sup> and $0<sup>BTC</sup>.
 
-On one particular day, Harry reads about a new development in the Bitcoin world that she thinks could radically increase the value of Bitcoin. She goes to her exchange and immediately converts the entirety of her portfolio from USD to BTC. Harry now holds $0<sup>USD</sup> and $100<sup>BTC</sup>
+On one particular day, Harry reads about a new development in the Bitcoin world that he thinks could radically increase the value of Bitcoin. He goes to her exchange and immediately converts the entirety of her portfolio from USD to BTC. Harry now holds $0<sup>USD</sup> and $100<sup>BTC</sup>
 
 It turns out, Harry’s prediction was right and her decision to convert USD to BTC was very wise. The value of bitcoin doubles. Harry’s exchange account now holds $0<sup>USD</sup> and $200<sup>BTC</sup>
 
-Harry looks at the market, and she concludes that Bitcoin’s current bull run isn’t over yet. She wants to buy more BTC, but she doesn’t have any more USD in her account. She could start a bank transfer, however that will take 3 days and she thinks the bull run might be over by then.
+Harry looks at the market, and he concludes that Bitcoin’s current bull run isn’t over yet. He wants to buy more BTC, but he doesn’t have any more USD in her account. He could start a bank transfer, however that will take 3 days and he thinks the bull run might be over by then.
 
 Instead of buying more USD, Harry can create a **contract for difference**, or **CFD**, with another investor,  who we will name Larry. Larry's friends call him Low-Risk-Low-Reward Larry because he likes stability.
 
