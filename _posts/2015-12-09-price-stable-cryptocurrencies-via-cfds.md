@@ -24,17 +24,17 @@ Instead of buying more USD, Harry can create a **contract for difference**, or *
 
 Unlike Harry, Nelly isn’t really interested in speculating on the day-to-day of ether. He just wants to make sure the value of the money in his account stays stable.
 
-Harry and Nelly agree to a contract that goes like this:
+Harry and Nelly agree to a CFD that goes like this:
 
 1. Harry will put up his $200<sup>ETH</sup> as collateral into an escrow
 2. Nelly will put up his $100<sup>ETH</sup> of collateral into the same escrow
-3. The contract will end in 24 hours at which point
+3. The CFD will end in 24 hours at which point
 	1. The escrow will send $100<sup>ETH</sup> of collateral will be sent to Nelly
 	2. The escrow will send the remainder of the collateral to Harry
 
-*Note that this contract exists entirely on the blockchain. The escrow is automated and there is no risk of the escrow stealing funds.*
+*Note that this CFD exists entirely on the blockchain. The escrow is automated and there is no risk of the escrow stealing funds.*
 
-Lets take a look at the value of the contract under two scenarios. In the first scenario, the price of ETH in USD doubles. In the second scenario, the price of ETH in USD halves.
+Lets take a look at the value of the CFD under two scenarios. In the first scenario, the price of ETH in USD doubles. In the second scenario, the price of ETH in USD halves.
 
 1. If the price of ETH doubles, the value of the collateral in the CFD doubles from $300<sup>ETH</sup> to $600<sup>ETH</sup>. Since Nelly will be returned $100<sup>ETH</sup>, Harry will be returned $500<sup>ETH</sup>.
 2. If the price of ETH halves, the value of the collateral in the CFD halves from $300<sup>ETH</sup> to $150<sup>ETH</sup>. Since Nelly's will be returned $100<sup>ETH</sup>, Harry will be returned a mere $50<sup>ETH</sup>
@@ -45,11 +45,11 @@ While the value of the CFD to Harry is volatile, the value of the CFD to Nelly i
 
 What if the value of ETH drops so much that even the collateral cannot cover it?
 
-While we have $300<sup>ETH</sup> of collateral, a very severe drop in the price of ETH could make it so that Nelly does not receive his original $100<sup>ETH</sup>. This is protected against automatically by the escrow service, who prematurely ends the contract and  automatically rolls Nelly's $100<sup>ETH</sup> into a new CFD if there is a possibility of a default. In such a scenario, Harry might not be returned any of his original collateral.
+While we have $300<sup>ETH</sup> of collateral, a very severe drop in the price of ETH could make it so that Nelly does not receive his original $100<sup>ETH</sup>. This is protected against automatically by the escrow service, who prematurely ends the existing CFD and  automatically rolls Nelly's $100<sup>ETH</sup> into a new CFD if there is a possibility of a default. In such a scenario, Harry might not be returned any of his original collateral.
 
 ## Creating the Currency
 
-Now Nelly has a contract provably worth $100<sup>ETH</sup>. Rather then forcing Nelly to claim the contract, we could send a ticket to Nelly that allows him (or anyone else who presents that ticket) to claim the contract. In turn, Nelly could sell that ticket to whoever he likes.
+Now Nelly has a CFD provably worth $100<sup>ETH</sup>. Rather then forcing Nelly to claim the CFD, we could send a ticket to Nelly that allows him (or anyone else who presents that ticket) to claim the CFD. In turn, Nelly could sell that ticket to whoever he likes.
 
 As these tickets grow in quantity, they eventually become a currency. Every ticket holder knows their ticket corresponds to a CFD worth $100<sup>ETH</sup>.
 
