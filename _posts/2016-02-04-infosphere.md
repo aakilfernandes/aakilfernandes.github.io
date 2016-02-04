@@ -13,10 +13,6 @@ Ethereum contracts are forever. Thats an incredibly powerful tool but also very 
 
 Most developers will rightfully include a way to update specific storage values within a contract. But what if you need to create a new value that you didn't think of when you first deployed your contract?
 
-Enter infosphere - an arbitrary key/value data store. 
-
-![Infosphere](/assets/images/infosphere.png)
-
 Lets imagine you have a `Person` contract that can update various features like `firstName` and `lastName`. You might create a contract that looks like this
 
     contract Person is owned{
@@ -43,6 +39,10 @@ Then you could update a person like so
 This is reasonable, but not very future proof. Lets say that in a couple years we want to give every person an `coinbase` field. Unfortunately, we'd be stuck without any path to do it.
 
 ## The Solution
+
+Enter infosphere - an arbitrary key/value data store. 
+
+![Infosphere](/assets/images/infosphere.png)
 
 Rather than individually list the various fields we have, we could simply have our Person contract inherit an `infosphered` contract and set a local infopshere reference.
 
