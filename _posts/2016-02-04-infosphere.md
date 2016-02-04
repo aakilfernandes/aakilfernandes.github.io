@@ -54,10 +54,12 @@ Rather than individually list the various fields we have, we could simply have o
 
     }
 
-And once deployed set storage values
+And once deployed set storage values.
 
     person.setString('firstName','Aakil');
     person.setString('lastName','Fernandes');
+
+Rather than storing values locally, the `infopshered` contract calls `Infosphere` who stores the values in a map.
 
 And if we ever need to add a coinbase field, we could simply
 
