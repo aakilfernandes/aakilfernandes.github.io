@@ -21,18 +21,18 @@ Lets imagine you have a `Person` contract that can update various features like 
 
     contract Person is owned{
        
-    	string firstName;
-    	string lastName;
+        string firstName;
+        string lastName;
 
-	    function setFirstName(_firstName){
-	    	requireOwnersip();
-	    	firstName = _firstName;
-    	}
+        function setFirstName(_firstName){
+            requireOwnersip();
+            firstName = _firstName;
+        }
 
-    	function setLastName(_lastName){
+        function setLastName(_lastName){
     		requireOwnersip();
-	    	lastName = _lastName;
-    	}
+            lastName = _lastName;
+        }
     }
 
 Then you could update a person like so
@@ -69,19 +69,10 @@ And if we ever need to add a coinbase field, we could simply
 
 I've deployed an Infosphere at 0x1a8703734b493578bf84d385b1f537412398277b for use in SafeMarket. You're more than welcome to use it as well. It  includes 6 basic solidity types (`bool`, `address`, `bytes`, `string`, `int`, `uint`). Based on your particular needs, this may be overkill or underkill.
 
-Infosphere Contract:
-https://github.com/SafeMarket/dapp/blob/0a7958f22010e5880b92bb40419b5e708feafa0b/app/contracts/0/Infosphere.sol
-
-infosphered contract:
-https://github.com/SafeMarket/dapp/blob/0a7958f22010e5880b92bb40419b5e708feafa0b/app/contracts/1/infosphered.sol
+* [Infosphere Contract](https://github.com/SafeMarket/dapp/blob/0a7958f22010e5880b92bb40419b5e708feafa0b/app/contracts/0/Infosphere.sol)
+* [infosphered contract](https://github.com/SafeMarket/dapp/blob/0a7958f22010e5880b92bb40419b5e708feafa0b/app/contracts/1/infosphered.sol)
 
 ### Creating your own Infosphere with Grunt
 
-I've put together a grunt task for building your own `Infosphere` and `infosphered` contracts with whatever arbitrary types you need.
-
-https://github.com/SafeMarket/grunt-infosphere
-
-Here's an example of an Infosphere contract that includes every type solidity currently offers.
-
-https://github.com/SafeMarket/grunt-infosphere/blob/master/contracts/complete/Infosphere.sol
+I've put together a [grunt task](https://github.com/SafeMarket/grunt-infosphere) for building your own `Infosphere` and `infosphered` contracts with whatever arbitrary types you need. Using grunt, you can quickly create [`Infosphere` and `infosphered` that includes every possible solidity type](https://github.com/SafeMarket/grunt-infosphere/blob/master/contracts/complete/)
 
