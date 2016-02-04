@@ -42,8 +42,6 @@ With ethereum, Charlie could offer stock in his company without a bank. He creat
 
 Since the stocks are issued from a smart contract that every one can view, each buyer can be assured that Charlie won't dillute ownership in his company too quickly. They can also trade their ownership of Charlie's stock easily since they can prove ownership of the stock.
 
-How is this different than Counterparty or existing smart assets like the one that Overstock recently took? Those all require a trusted exchange. Since ethereum has the ability to execute contracts within the blockchain, no exchange is needed to trade the stock and there is no counter-party risk of fraud.
-
 ## Hedging, without an exchange
 
 Danielle owns an oil rig. She wants to protect herself in case the price of oil falls.
