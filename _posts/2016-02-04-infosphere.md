@@ -20,7 +20,7 @@ Enter infosphere - an arbitrary key/value data store.
 Lets imagine you have a `Person` contract that can update various features like `firstName` and `lastName`. You might create a contract that looks like this
 
     contract Person is owned{
-       
+
         string firstName;
         string lastName;
 
@@ -30,15 +30,15 @@ Lets imagine you have a `Person` contract that can update various features like 
         }
 
         function setLastName(_lastName){
-    		requireOwnersip();
+            requireOwnersip();
             lastName = _lastName;
         }
     }
 
 Then you could update a person like so
 
-	person.setFirstName('Aakil');
-	person.setLastName('Fernandes');
+    person.setFirstName('Aakil');
+    person.setLastName('Fernandes');
 
 This is reasonable, but not very future proof. Lets say that in a couple years we want to give every person an `coinbase` field. Unfortunately, we'd be stuck without any path to do it.
 
@@ -47,10 +47,10 @@ This is reasonable, but not very future proof. Lets say that in a couple years w
 Rather than individually list the various fields we have, we could simply have our Person contract inherit an `infosphered` contract and set a local infopshere reference.
 
     contract Person is infosphered{
-    	    
-    	function Person(){
-    		infosphere = Infosphere(0x...)
-    	}
+
+        function Person(){
+            infosphere = Infosphere(0x...)
+        }
 
     }
 
