@@ -74,5 +74,5 @@ I've deployed an Infosphere at 0x1a8703734b493578bf84d385b1f537412398277b for us
 
 ### Creating your own Infosphere with Grunt
 
-I've put together a [grunt task](https://github.com/SafeMarket/grunt-infosphere) for building your own `Infosphere` and `infosphered` contracts with whatever arbitrary types you need. Using grunt, you can quickly create [`Infosphere` and `infosphered` that includes every possible solidity type](https://github.com/SafeMarket/grunt-infosphere/blob/master/contracts/complete/)
+I've put together a [grunt task](https://github.com/SafeMarket/grunt-infosphere) for building your own `Infosphere` and `infosphered` contracts with whatever arbitrary types you need. Using grunt, you can quickly create [contracts that includes every possible solidity type](https://github.com/SafeMarket/grunt-infosphere/blob/master/contracts/complete/)
 
