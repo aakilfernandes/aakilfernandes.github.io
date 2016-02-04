@@ -25,12 +25,12 @@ Lets imagine you have a `Person` contract that can update various features like 
         string lastName;
 
         function setFirstName(_firstName){
-            requireOwnersip();
+            if(msg.sender!=owner) throw;
             firstName = _firstName;
         }
 
         function setLastName(_lastName){
-            requireOwnersip();
+            if(msg.sender!=owner) throw;
             lastName = _lastName;
         }
     }
