@@ -1,6 +1,6 @@
 ---
 layout: post
-tagline: An arbitrary key/value data store for your Ethereum contracts
+tagline: An arbitrary key/value data store for your Ethereum Solidity contracts
 ---
 
 > The Infosphere is a massive biological memory bank created by the Brain Spawn to catalogue all the information in the Universe.
