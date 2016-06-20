@@ -2,13 +2,16 @@
 <header class="sidebar-header" role="banner" sidenav-ignore>
 	<h3>
 		<a href="/">
-			Aakil Fernandes
+			{{ site.author.name }}
 		</a>
 	</h3>
-	<p>Founder of <a href="http://karmalytics.co">Karmalytics.co</a></p>
-	<p>Lead Developer for <a href="http://safemarket.github.io/">SafeMarket</a></p>
+	<p><img src="{{ site.author.image }}" style="max-width:20%"></p>
 	<p>
-		<a href="mailto:aakilfernandes@gmail.com">aakilfernandes@gmail.com</a>
+		Founder of <a href="http://karmalytics.co">Karmalytics.co</a>
+		<br>Lead Developer for <a href="http://safemarket.github.io/">SafeMarket</a>
+	</p>
+	<p>
+		<a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>
 		<br><a href="http://github.com/aakilfernandes">github.com/aakilfernandes</a>
 	</p>
 	{% if !page.isHome %} 

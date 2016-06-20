@@ -15,11 +15,11 @@ title : Aakil Fernandes
 tagline: Full Stack Web Developer
 website: http://aakilfernandes.com
 author :
-  image: aakil.png
   name : Aakil Fernandes
   email : aakilfernandes@gmail.com
   email_md5: d5b733ff197a8938e8a62be8cc90457a
   bio: Full Stack Web Developer & Founder of Develodex
+  image: /assets/images/authors/aakil.jpg
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt
