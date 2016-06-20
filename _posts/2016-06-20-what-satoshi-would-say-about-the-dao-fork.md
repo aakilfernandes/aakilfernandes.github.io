@@ -2,7 +2,7 @@
 layout: post
 ---
 
-Why does it take 3 days to send a bank transfer? You might think it has to do with outdated technology. This is incorrect. The reason that bank transfers take 3 days is because bank transfers are reversible, and therefore banking institutions are on the hook for fraud and crime. Those 3 days are spent on AML/KYC and getting partner banks to sign off on transactions before they can be "finalized".
+Why does it take 3 days to send a bank transfer? You might think it has to do with outdated technology. This is incorrect. The reason that bank transfers take 3 days is because bank transfers are reversible, and therefore banking institutions are on the hook for fraud and crime. Those 3 days are spent on due diligence and getting partner banks to sign off on transactions before they can be "finalized".
 
 Reversibility, often thought of as a feature, is more often a bug. If regulators realize you have the ability to reverse transactions, they will force you to reverse transactions they don't like.
 
