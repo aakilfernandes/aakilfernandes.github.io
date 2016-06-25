@@ -19,7 +19,7 @@ What are the barriers to implementing a soft and hard fork?
 #### Hard Fork
 
 * Works at the protocol level 
-* Requires only a single miner to switch to the new fork
+* Hashpower is irrelevant
 * Nodes, exchanges, and users must all upgrade
 
 ------------------------
