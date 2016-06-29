@@ -11,4 +11,4 @@ Account `0x0037a6b811ffeb6e072da21179d11b1406371c63` is also the owner of 957,31
 
 At a value of 1 DAO = .01 ETH, and 1 ETH = 12 USD, that works out to $114,877.
 
-I'm not interested in starting a witch hunt or making this about any single person. But when a protocol developer and Ethereum Foundation ex-member has such large stake in The DAO, there are clear conflicts of interest.
+I'm not interested in making this about any single person. But when a protocol developer and Ethereum Foundation ex-member has such large stake in The DAO, there are clear conflicts of interest.
