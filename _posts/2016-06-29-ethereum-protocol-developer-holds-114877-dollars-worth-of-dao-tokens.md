@@ -3,7 +3,7 @@ title: Ethereum Protocol Developer Holds $114,877 Worth of DAO tokens
 layout: post
 ---
 
-Edit: For the record, I'm not suggesting this individual is twiddling his moustache and laughing maniaccaly. What I am suggesting is "It is difficult to get a man to understand something, when his salary depends on his not understanding it.". I hope this article results in a push for better financial disclosure from protocol developers, and a firewall between protocol and dapp development.
+Edit: For the record, I'm not suggesting this individual is twiddling his moustache and laughing maniacally. What I am suggesting is "It is difficult to get a man to understand something, when his salary depends on his not understanding it.". I hope this article results in a push for better financial disclosure from protocol developers, and a firewall between protocol and dapp development.
 
 The Ethereum Foundation holds much of their ether in a multi-sig contract at `0xde0b295669a9fd93d5f28d9ec85e40f4cb697bae`. One of those signers is account `0x0037a6b811ffeb6e072da21179d11b1406371c63`.
 
