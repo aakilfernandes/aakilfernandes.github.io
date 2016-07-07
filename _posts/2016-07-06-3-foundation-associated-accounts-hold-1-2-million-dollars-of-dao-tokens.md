@@ -22,6 +22,8 @@ layout: post
 
 ## DRAFT - NEEDS COMMENT - DO NOT SHARE
 
+<!--
+
 In my heart, I believe the Foundation and former members (Vitalik, Vlad, Stephen Tual, Gavin, etc) are good people. I believe that they believe they are acting in the best interest of Ethereum. What I also believe, is your view of the world depends on where you sit.
 
 The Foundation and their members sit very close to the center of the DAO. Too close. Their former CCO was the founder and many of their business partners/employees are large investors. The view from their seat involves dozens of individuals and institutions who are heavily invested in the DAO and may even face legal consequences if it explodes.
@@ -30,7 +32,11 @@ This post does not in any way suggest (or mean to suggest) the Foundation or its
 
 If the community comes together without the Foundation and pulls off a hard fork, so be it. But the Foundation should not be involved in any way.
 
+-->
+
 The data here is also far from anything resembling a smoking gun. These accounts very well could be contractors or ex-employees who hold no current relationship with the Foundation or its members. However I would posit it is the Foundation's responsibility to disclose conflicts of interest and should establish protocols for doing so. It is not acceptable to sit silently while the Foundation fails to institute such a protocol.
+
+I would like to invite the Foundation to clarify the nature of these transactions, and confirm their association with current Foundation members.
 
 ## Accounts in Question
 
