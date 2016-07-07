@@ -36,7 +36,7 @@ The data here is also far from anything resembling a smoking gun. These accounts
 
 #### Account #1 ($430k of DAO Tokens, $190k Since Disclosure)
 
-On August 15th, 2015, the Ethereum Foundation made a transfer of 3 million ether to `b2d7e6cd1b25f591e2e630ba65dac638e6cd4c8e` [[source]](https://live.ether.camp/transaction/a0de5046066e0b03b42ec96a98fdc816ec4d0e6fb339d69ea5765d18a549eb28). That same day, 9.7k ether, was transferred from that account to `2d0efca5e73e90c7707931678dfaef38c068ac10` [[source]](https://live.ether.camp/transaction/2dbae9b871f6beb1b4921e3a2653c42c2f0f293916ea0575a0ec2d54879efa0d). This account is the owner of  4.3M DAO tokens.
+On August 15th, 2015, the Ethereum Foundation made a transfer of 3 million ether to `b2d7e6cd1b25f591e2e630ba65dac638e6cd4c8e` [[source]](https://live.ether.camp/transaction/a0de5046066e0b03b42ec96a98fdc816ec4d0e6fb339d69ea5765d18a549eb28). That same day, 97k ether, was transferred from that account to `2d0efca5e73e90c7707931678dfaef38c068ac10` [[source]](https://live.ether.camp/transaction/2dbae9b871f6beb1b4921e3a2653c42c2f0f293916ea0575a0ec2d54879efa0d). This account is the owner of  4.3M DAO tokens.
 
 11 transfers of DAO tokens totalling 1.9M DAO tokens ($190k) were made after the public DAO vulnerability disclosure. Those transfers were made from a likely exchange address `df21fa922215b1a56f5a6d6294e6e36c85a0acfb`.
 
