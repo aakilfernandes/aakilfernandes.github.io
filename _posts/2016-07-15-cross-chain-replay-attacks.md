@@ -25,7 +25,7 @@ Splitter contract transactions also have the drawback of being protocol-valid on
 
 ### EIP 134
 
-I've submitted [an EIP](https://github.com/ethereum/EIPs/issues/134) to the Ethereum Foundation that would require transactions to contain data about a recent blockhash. This would prevent cross-chain replays and have the added benefit of time limiting transactions. I believe that this EIP would be a "bare-minimum of any potential .
+I've submitted [an EIP](https://github.com/ethereum/EIPs/issues/134) to the Ethereum Foundation that would require transactions to contain data about a recent blockhash. This would prevent cross-chain replays and have the added benefit of time limiting transactions.
 
 ### Nonce Burning (courtesy Tjaden Hess)
 
