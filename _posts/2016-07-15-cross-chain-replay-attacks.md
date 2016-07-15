@@ -29,4 +29,4 @@ I've submitted [an EIP](https://github.com/ethereum/EIPs/issues/134) to the Ethe
 
 ### Nonce Burning (courtesy Tjaden Hess)
 
-Lets say you know you're planning on using the status-quo chain for the near future. You could "burn" a bunch of nonces on the dao-replacement chain, thereby making transactions with those nonces invalid. This is a somewhat expensive and time consuming solution, it requires a new and seperate transaction on the unchosen chain to be mined before and equivalent nonce transaction on the chain of choice.
+Lets say you know you're planning on using the status-quo chain for the near future. You could "burn" a bunch of nonces on the dao-replacement chain, thereby making transactions with those nonces invalid. This is a somewhat expensive and time consuming solution, it requires a new and seperate transaction on the unchosen chain to be mined before an equivalent nonce transaction on the chain of choice.
