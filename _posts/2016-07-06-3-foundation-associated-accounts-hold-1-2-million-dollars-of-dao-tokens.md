@@ -1,6 +1,6 @@
 ---
-title: 3 Foundation Associated Accounts Hold $1.2 Million of DAO Tokens
-tagline: 280K Accumulated After DAO Vulnerability Disclosure
+title: 3 Ethereum Foundation Associated Accounts Hold $1.2 Million of DAO Tokens
+tagline: $280K Accumulated Since DAOpocalypse
 layout: post
 ---
 
@@ -18,40 +18,29 @@ layout: post
   li ul{padding-left:20px}
 </style>
 
-------------
+Despite a commitment to better financial disclosure, the Etherum Foundation declined to comment on this article.
 
-## DRAFT - NEEDS COMMENT - DO NOT SHARE
+In the best case scenario, these accounts are those of former employees or contractors who no longer have any connection to the Foundation. In the worst case scenario, these accounts are owned by current executives/developers who are simultaneously pushing for a DAO fork while increasing their personal holdings of DAO tokens.
 
-<!--
+I would like to invite the Foundation to clarify the nature of these transactions.
 
-In my heart, I believe the Foundation and former members (Vitalik, Vlad, Stephen Tual, Gavin, etc) are good people. I believe that they believe they are acting in the best interest of Ethereum. What I also believe, is your view of the world depends on where you sit.
+All data was collected the weekend of July 2nd and represents the state of the blockchain at that time.
 
-The Foundation and their members sit very close to the center of the DAO. Too close. Their former CCO was the founder and many of their business partners/employees are large investors. The view from their seat involves dozens of individuals and institutions who are heavily invested in the DAO and may even face legal consequences if it explodes.
-
-This post does not in any way suggest (or mean to suggest) the Foundation or its members are evil or corrupt, but a simpler more banal truth. People protect those close to them. Which is precisely why the Founation should distance itself from the fork. They should serve the best interest of Ethereum as a platform, yet cannot plausibly do so while sitting so close to the epicenter of the DAO. They should cease all DAO specific development and allow the community of Slock.it to spearlead the effort.
-
-If the community comes together without the Foundation and pulls off a hard fork, so be it. But the Foundation should not be involved in any way.
-
-
-The data here is also far from anything resembling a smoking gun. These accounts very well could be contractors or ex-employees who hold no current relationship with the Foundation or its members. However I would posit it is the Foundation's responsibility to disclose conflicts of interest and should establish protocols for doing so. It is not acceptable to sit silently while the Foundation fails to institute such a protocol.
-
-I would like to invite the Foundation to clarify the nature of these transactions, and confirm their association with current Foundation members.
-
--->
+---------------------------
 
 ## Accounts in Question
 
-#### Account #1 ($430k of DAO Tokens, $190k Since Disclosure)
+#### Account #1 ($430k of DAO Tokens, $190k Since DAOpocalypse)
 
 On August 15th, 2015, the Ethereum Foundation made a transfer of 3 million ether to `b2d7e6cd1b25f591e2e630ba65dac638e6cd4c8e` [[source]](https://live.ether.camp/transaction/a0de5046066e0b03b42ec96a98fdc816ec4d0e6fb339d69ea5765d18a549eb28). That same day, 97k ether, was transferred from that account to `2d0efca5e73e90c7707931678dfaef38c068ac10` [[source]](https://live.ether.camp/transaction/2dbae9b871f6beb1b4921e3a2653c42c2f0f293916ea0575a0ec2d54879efa0d). This account is the owner of  4.3M DAO tokens.
 
-11 transfers of DAO tokens totalling 1.9M DAO tokens ($190k) were made after the public DAO vulnerability disclosure. Those transfers were made from a likely exchange address `df21fa922215b1a56f5a6d6294e6e36c85a0acfb`.
+11 transfers of DAO tokens totalling 1.9M DAO tokens ($190k) were made after DAOpocalypse. Those transfers were made from a likely exchange address `df21fa922215b1a56f5a6d6294e6e36c85a0acfb`.
 
-#### Account #2 ($140k of DAO Tokens, $90k Since Disclosure)
+#### Account #2 ($140k of DAO Tokens, $90k Since DAOpocalypse)
 
 On September 22, 2015, an Ethereum Foundation signatory (`5ed8cee6b63b1c6afce3ad7c92f4fd7e1b8fad9f`) transferred 25k ether to `30475463369f8f18ec9724ed53f1b71f24ec48b2`[[source]](https://live.ether.camp/transaction/194f36f26f26500a210e35f3ea689c5c5019c0ddbc0d4ad49b4141f895e78227). That account is the holder of 1.4 Million DAO tokens).
 
-5 transfers of DAO tokens totalling 915k DAO tokens ($90k) were made to this account after the public DAO vulnerability disclosure. All 5 of those transfers were made from a likely exchange `df21fa922215b1a56f5a6d6294e6e36c85a0acfb`.
+5 transfers of DAO tokens totalling 915k DAO tokens ($90k) were made to this account after DAOpocalypse. All 5 of those transfers were made from a likely exchange `df21fa922215b1a56f5a6d6294e6e36c85a0acfb`.
 
 #### Account #3 ($680k of DAO Tokens)
 
