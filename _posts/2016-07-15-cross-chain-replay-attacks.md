@@ -1,17 +1,17 @@
 ---
 layout: post
-tagline: What Cross-Chain Replays Mean For the Ethereum Fork
+tagline: What They Mean For the Ethereum Fork
 ---
 
 In Ethereum, users can transfer ether or interact with dapps by broadcasting signed transactions to a network of peers, miners, and exchanges. The catch is that signed transactions contain no network-identifying data. A signed transaction on one network can be "replayed" on the other network by anyone who wants to do so.
 
-## What does this mean?
+## What does this mean for...
 
-### What does this mean for users?
+### users?
 
 This means that when interacting with any Ethereum client (be it Mist, geth, or parity), be prepared that any transactions on one chain may be replayed on the other. If you choose the "wrong" fork, you may end up losing funds when switching back to the "right" fork. For those who will use whichever chain has the most support, the safest course of action is to wait a few days or weeks until the contention dies down.
 
-### What does this mean for exchanges?
+### exchanges?
 
 Lets say an exchange allows users to withdraw funds on both status-quo and dao-replacement chains and there is a 10% price difference in between the two. An attacker could easily withdraw at the market price on the cheaper chain, replay the transaction on the more expensive chain, and redeposit their eth for a 10% arbitrage. Like users, exchanges must pick a chain and live with the consequences, or wait until there has been a clear winner.
 
