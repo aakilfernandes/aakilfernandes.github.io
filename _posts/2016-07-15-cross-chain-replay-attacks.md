@@ -21,8 +21,12 @@ Lets say an exchange allows users to withdraw funds on both status-quo and dao-r
 
 One possible solution is to create fork-splitter contracts. These contracts will transfer funds to a new account, conditional on whether the hard fork has been applied or not. AFAIK, no fork-splitter contracts have been created or audited.
 
-Splitter contract transactions also have the drawback of being protocol-valid on both chains. Miners on both chains will happily process them and they will consume gas, yet their state-chainge will only be applied on one chain.
+Splitter contract transactions also have the drawback of being protocol-valid on both chains. Miners on both chains will happily process them and they will consume gas, yet their state-change will only be applied on one chain.
 
 ### EIP 134
 
-I've submitted [an EIP](https://github.com/ethereum/EIPs/issues/134) to the Ethereum Foundation that would require transactions to contain data about a recent blockhash. This would prevent cross-chain replays and have the added benefit of time limiting transactions. My hope is that this EIP would be included in the hard fork to prevent replay attacks.
+I've submitted [an EIP](https://github.com/ethereum/EIPs/issues/134) to the Ethereum Foundation that would require transactions to contain data about a recent blockhash. This would prevent cross-chain replays and have the added benefit of time limiting transactions. I believe that this EIP would be a "bare-minimum of any potential .
+
+### Nonce Burning (courtesy Tjaden Hess)
+
+Lets say you know you're planning on using the status-quo chain for the near future. You could "burn" a bunch of nonces on the dao-replacement chain, thereby making transactions with those nonces invalid. This is a somewhat expensive and time consuming solution, it requires a new and seperate transaction on the unchosen chain to be mined before and equivalent nonce transaction on the chain of choice.
