@@ -1,6 +1,6 @@
 ---
 layout: post
-tagline: What They Mean For the Ethereum Fork
+tagline: What They Mean For Contentious Hard Forks
 ---
 
 In Ethereum, users can transfer ether or interact with dapps by broadcasting signed transactions to a network of peers, miners, and exchanges. The catch is that signed transactions contain no network-identifying data. A signed transaction on one network can be "replayed" on the other network by anyone who wants to do so.
