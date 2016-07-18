@@ -30,4 +30,4 @@ Executing the attack is incredibly simple for pro-fork miners
 ### Solutions
 
 1. Disable fast sync before block #1920000. In the near future, update geth with a block hash check instead of a extra data check
-2. Extend the [handshake](https://github.com/ethereum/go-ethereum/blob/5f55d95aea433ef97c48ae927835d833772350de/eth/handler.go#L288-L297) to 10 blocks instead of 1. This will make it so that malicious miners will need to execute a 51% attack, rather than just get lucky on block #1920000.
+2. Extend the [handshake](https://github.com/ethereum/go-ethereum/blob/5f55d95aea433ef97c48ae927835d833772350de/eth/handler.<go id="L288-L297"></go>) to 10 blocks instead of 1. This will make it so that malicious miners will need to execute a 51% attack, rather than just get lucky on block #1920000. This validation is already done while syncing, I'm suggesting it extend to peering as well.
