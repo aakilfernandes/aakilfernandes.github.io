@@ -2,8 +2,6 @@
 layout: post
 ---
 
-## Draft, work in progress, do not share pleaseee
-
 ### Disclaimer
 
 This article has not been thoroughly peer reviewed. Usually I would wait longer for input for others, however the speed at which the DAO hard fork is being developed and rolled out leaves little room. As such, please wait before drawing final conclusions on the viability of this attack.
@@ -28,3 +26,8 @@ Executing the attack is incredibly simple for pro-fork miners
 2. Restart geth with `--extradata="dao-hard-fork"`
 3. Continue to mine as normal
 4. If you're lucky enough to get block #1920000, you'll have initated a network-wide spoof attack
+
+### Solutions
+
+1. Disable fast sync before block #1920000. In the near future, update geth with a block hash check instead of a extra data check
+2. Extend the [handshake](https://github.com/karalabe/go-ethereum/blob/44f20203b877c780794571969c1c4b87c8dbf2d5/eth/handler.go#L287-L298) to 10 blocks instead of 1. This will make it so that malicious miners will need to execute a 51% attack, rather than just get lucky on block #1920000.
