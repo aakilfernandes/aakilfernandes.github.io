@@ -22,7 +22,7 @@ The geth team seems to be concerned enough about this attack, that they included
 
 Executing the attack is incredibly simple for pro-fork miners
 
-1. Don't upgrade to 1.4.10
+1. Don't upgrade to 1.4.10 (you can check your current version with `geth version`)
 2. Restart geth with `--extradata="dao-hard-fork"`
 3. Continue to mine as normal
 4. If you're lucky enough to get block #1920000, you'll have initated a network-wide spoof attack
