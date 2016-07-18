@@ -4,7 +4,7 @@ layout: post
 
 On July 15th, 2016 the Ethereum Foundation announced on [their blog](https://blog.ethereum.org/2016/07/15/to-fork-or-not-to-fork/) the final details of a hard fork they have been developing. Proponents of the hard fork see it as a reasonable measure to pay DAO token speculators who lost money in [the DAO hack](http://www.bloomberg.com/news/articles/2016-06-23/a-50-million-heist-unleashes-high-stakes-showdown-in-blockchain). Opponents see it as a challenge to the fundamental immutability gaurentees of the system and a naked attempt to edit the ledger in favor of entrenched interests. Full disclosure, I'm in the latter group.
 
-Tucked below a technical explanation of the Foundation's proposed fork, was a small note anyone would be forgiven for missing.
+Below a technical explanation of the Foundation's proposed fork, was an important note.
 
 > Unfortunately time limits require swift adoption before a protocol change becomes impractical. The community tool carbonvote will be used to set the default fork option for Geth. At block number 1894000 the votes will be tallied, and the outcome will determine whether the default is set to fork on not to fork.
 
