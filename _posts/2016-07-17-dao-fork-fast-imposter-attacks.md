@@ -2,6 +2,8 @@
 layout: post
 ---
 
+## Warning: In review, will be updated shortly
+
 Disclaimer: This article has not been thoroughly peer reviewed. Usually I would wait a few days for input for others, however the speed at which the DAO hard fork is being developed and rolled out leaves little room. As such, please wait before drawing final conclusions on the viability of this attack.
 
 ----
