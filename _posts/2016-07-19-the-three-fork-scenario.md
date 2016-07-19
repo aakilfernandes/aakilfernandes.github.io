@@ -13,7 +13,7 @@ However, this is a small and distinct possibility that there will actually be th
 In order for this three-fork-scenario to come into existence, two conditions must be met:
 
 1. The hashpower behind `NF1.4.9` >= the hashpower behind `NF1.4.10`
-2. A miner executes a "[dao-fork spoof attack](http://aakilfernandes.github.io/dao-fork-spoof-attacks)" between blocks 1920000 and 192010
+2. A miner executes a "[dao-fork spoof attack](http://aakilfernandes.github.io/dao-fork-spoof-attacks)" between blocks 1920000 and 1920010
 
 ## Recommendations
 
