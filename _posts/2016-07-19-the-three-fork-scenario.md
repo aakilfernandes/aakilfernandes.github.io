@@ -10,7 +10,7 @@ However, this is a small and distinct possibility that there will actually be th
 2. (`NF2`) geth 1.4.10 --oppose-hard-fork
 3. (`HF`) geth 1.4.10 --support-hard-fork
 
-In order for this scenario to pass, two conditions must be met:
+In order for this three-fork-scenario to come into existence, two conditions must be met:
 
 1. The hashpower behind `NF1` >= the hashpower behind `NF2`
 2. A miner executes a "[dao-fork spoof attack](http://aakilfernandes.github.io/dao-fork-spoof-attacks)" between blocks 1920000 and 192010
