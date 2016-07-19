@@ -30,7 +30,7 @@ Upgrade to geth 1.4.10 --support-hard-fork
 3. After block 1920010, check your chain to see if a hard fork spoof attack has occured.
     1. You will know an attack occured if any of the blocks between 1920000 and 1920010 have an extradata field of `dao-hard-fork`.
     2. If the spoof attack has not occurred...
-        1. You can safely upgrade to 1.4.10 --oppose-hard-fork safely and use --fast
+        1. You can safely upgrade to 1.4.10 --oppose-hard-fork and use --fast
     3. If the spoof attack has occured...
         1. We have entered the three-fork-scenario, and you can decide if you want to be on `NF1.4.9` or `NF1.4.10`.
             1. On `NF1.4.9` you cannot safely use --fast until either the chains converge, or a fix is pushed
