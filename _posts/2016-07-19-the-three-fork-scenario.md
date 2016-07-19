@@ -38,4 +38,12 @@ Upgrade to geth 1.4.10 --support-hard-fork
 
 ## Why is this so complicated?
 
-Geth 1.4.10 imposes a soft fork on all users, including those who use the --oppose-dao-fork. The Ethereum Foundation developers have made the assumption that the hashpower behind `NF1.4.10` will be greater than `NF1.4.9` and therefore there will be no network split. I contend that is a risky assumption to make, especially since the fork was unveiled two days in advance of when it neds to be rolled out. We know a large number of nodes are still running months-old versions of geth and have no way of knowing in advance the relative miner adoption between the 3 potential chains.
+Geth 1.4.10 imposes a soft fork on all users, including those who use the --oppose-dao-fork. The Ethereum Foundation developers have made the assumption that the hashpower behind `NF1.4.10` will be greater than `NF1.4.9` and therefore there will be no network split. I contend that is a risky assumption to make, especially since the fork was unveiled two days in advance of when it needs to be rolled out. We know a large number of nodes are still running months-old versions of geth and have no way of knowing in advance the relative miner adoption between the 3 potential chains.
+
+## --fast fixes
+
+One of the main reasons cited for the soft fork is that it'll protect users syncing with the `--fast` flag. I contend there are other better solutions
+
+1. Use a merkle proof of block 1920000 to check the balance of the dao contract
+2. Use a centralized oracle server
+3. Simply warn users that `--fast` is insecure during hard forks, and they should wait till 1.4.11 until a blockhash can be hardcoded.
