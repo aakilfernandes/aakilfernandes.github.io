@@ -32,7 +32,9 @@ Upgrade to geth 1.4.10 --support-hard-fork
     2. If the spoof attack has not occurred...
         1. You can safely upgrade to 1.4.10 --oppose-hard-fork safely and use --fast
     3. If the spoof attack has occured...
-        1. You can wait for the hashpower of `NF2` to overtake `NF1` (in which case `NF2` and `NF1` will converge to the same chain).
+        1. We have entered the three-fork-scenario, and you can decide if you want to be on `NF1` or `NF2`.
+            1. On `NF1` you cannot safely use --fast until either the chains converge, or a fix is pushed
+            2. On `NF2` you can safely use --fast, however it is less secure (by miner hashpower) than `NF1`
 
 ## Why is this so complicated?
 
