@@ -8,11 +8,13 @@ IOTA’s tangle sounds complicated, but if you know how a blockchain works, it i
 
 It really is that simple. It is so simple, that I assume Satoshi started with “the tangle” before he opted for a blockchain. Claiming the tangle as a new alternative to the blockchain is like claiming the axis is a new alternative to the wheel. The wheel could not exist without the axis, just as the blockchain could not exist without the tangle.
 
-### Why did Satoshi add blocks to the tangle?
+### Why use blocks?
+
+While there are many reasons, I think the most simple and important is efficiency.
 
 If we assume a network has `T` transactions per seconds, a tangle node requires `T` PoW checks and at least `T` weight calculations per second. A blockchain which processes `B` blocks per second, requires requires `B` PoW checks and at least `B` weight calculations per second. Since a block contains many transactions (`B < T`), blockchains will always process transactions more efficiently than a pure tangle.
 
-Perhaps there is some other optimization made by removing the blocks. For example, there could be some memory or file read improvements. However, the IOTA whitepaper makes no references to any such improvements.
+By analogy, a tangle is like a bar where you have to show your ID to the bartender every time you order a drink. A blockchain is like a bar where you show your ID to a bouncer standing outside.
 
 ## “Free” transactions
 
